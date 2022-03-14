@@ -1,0 +1,79 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch TestReadRadius",
+            "request": "launch",
+            "mainClass": "TestReadRadius"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestPlanetConstructor",
+            "request": "launch",
+            "mainClass": "TestPlanetConstructor"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestCalcForceExertedBy",
+            "request": "launch",
+            "mainClass": "TestCalcForceExertedBy"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestUpdate",
+            "request": "launch",
+            "mainClass": "TestUpdate"
+        },
+        {
+            "type": "java",
+            "name": "Launch NBody",
+            "request": "launch",
+            "mainClass": "NBody",
+            "args": "157788000.0 25000.0 data/planets.txt"
+        },
+        {
+            "type": "java",
+            "name": "Launch BasicInDemo",
+            "request": "launch",
+            "mainClass": "BasicInDemo"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeapYear",
+            "request": "launch",
+            "mainClass": "LeapYear",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch GraphDBLauncher",
+            "request": "launch",
+            "mainClass": "GraphDBLauncher",
+            "projectName": "proj3"
+        },
+        {
+            "type": "java",
+            "name": "Launch MapServer",
+            "request": "launch",
+            "mainClass": "MapServer",
+            "projectName": "proj3"
+        },
+        {
+            "type": "java",
+            "name": "Launch CSCourseDB",
+            "request": "launch",
+            "mainClass": "example.CSCourseDB",
+            "projectName": "proj3"
+        }
+    ]
+}
