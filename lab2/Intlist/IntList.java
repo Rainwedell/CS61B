@@ -82,7 +82,23 @@ public class IntList {
 
     public static IntList dcatenate(IntList A, IntList B) {
         //TODO:  fill in method
-        return null;
+        IntList L = A;
+        //A为null
+        if (L==null){
+            A = B;
+            return A;
+        }
+        //A不为null
+        //循环
+        /*定位List A最后一个结点*/
+        while(L.rest!=null){
+            L = L.rest;
+        }
+        L.rest = B;
+        return A;
+        //递归
+
+
     }
 
     /**
@@ -91,7 +107,43 @@ public class IntList {
      */
     public static IntList catenate(IntList A, IntList B) {
         //TODO:  fill in method
-        return null;
+        //ptr读取A,B中的值
+        //head 确定 表头
+        //L 确定最后一个结点位置
+        IntList ptr = A;
+        IntList L,head;
+        head = null;
+        if (A!=null){
+
+            head =new IntList(ptr.first, null);
+            L = head;
+            ptr=ptr.rest;
+            while (ptr!=null){
+                L.rest =new IntList(ptr.first, null);
+                ptr = ptr.rest;
+                L=L.rest;
+            }
+            // 复制B
+            ptr = B;
+            while (ptr!=null){
+                L.rest =new IntList(ptr.first, null);
+                ptr = ptr.rest;
+                L=L.rest;
+            }
+        }
+        else if (B!=null){
+            ptr = B;
+            head =new IntList(ptr.first, null);
+            L = head;
+            ptr=ptr.rest;
+            while (ptr!=null){
+                L.rest =new IntList(ptr.first, null);
+                ptr = ptr.rest;
+                L=L.rest;
+            }
+        }
+
+        return head;
     }
 
 
